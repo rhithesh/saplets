@@ -318,13 +318,15 @@ export default function PremiumDyPetFood() {
           <p className="text-xl opacity-90 mb-8">
             Contact us today to learn more about our premium pet food collection
           </p>
-          <motion.button
-            className="bg-white text-purple-900 font-bold py-4 px-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Get In Touch
-          </motion.button>
+         <motion.button
+  onClick={() => window.location.href = "mailto:spinachachiever@gmail.com"}
+  className="bg-white text-purple-900 font-bold py-4 px-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+>
+  Get In Touch
+</motion.button>
+
         </motion.div>
       </section>
     </div>

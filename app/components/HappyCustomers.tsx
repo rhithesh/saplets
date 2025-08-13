@@ -6,18 +6,18 @@ import { useState, useEffect } from "react"
 
 const testimonials = [
   {
-    name: "Bella & Max",
+    name: "Sia",
     text: "Saplpets treats are the only thing Bella begs for now. Max loves the toys too!",
-    img: "/customer/arjun.avif"
+    img: "/customer/sia.avif"
   },
   {
-    name: "Rocky",
-    text: "Fast delivery and premium quality — Rocky wags his tail every time the box arrives.",
+    name: "Karren",
+    text: "Fast delivery and premium quality — lia wags her tail every time the box arrives.",
     img: "/customer/karren.avif"
   },
   {
-    name: "Luna",
-    text: "I never thought I'd find stylish AND comfy beds. Luna is obsessed!",
+    name: "Robin",
+    text: "I never thought I'd get this great pricing",
     img: "/customer/robin.avif"
   }
 ]
