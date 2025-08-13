@@ -9,9 +9,9 @@ const products = [
     desc: "We manufacture premium-quality pet dry food, crafted with the finest natural ingredients. Trusted by brands worldwide for nutrition, taste, and consistent excellence",
     info: ["Extruded kibbles", "Oven-baked kibbles", "Cold-pressed kibbles"],
     images: [
-      "https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1601758174493-bea9f8e7ce38?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&h=400&fit=crop",
+      "/food/dry/biscuits.png",
+      "/food/dry/heart.png",
+      "/food/starshaped.png",
     ],
     color: "from-teal-600 to-cyan-700",
     accent: "bg-teal-500",
@@ -50,8 +50,8 @@ const products = [
     info: ["Star shaped", "heart shaped", "two colour","tri colour"],
     images: [
       "https://images.unsplash.com/photo-1601758174493-bea9f8e7ce38?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=600&h=400&fit=crop",
+      "/food/dry/heart.png",
+      "/food/starshaped.png",
     ],
     color: "from-rose-600 to-pink-700",
     accent: "bg-rose-500",

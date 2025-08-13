@@ -35,7 +35,7 @@ export default function Footer() {
 
         {/* Newsletter */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Join Our Pack</h3>
+          <h3 className="text-lg font-semibold mb-3">Reach us out </h3>
           <p className="text-sm mb-3">Get the latest deals, tips, and adorable pet pics straight to your inbox.</p>
           <form className="flex">
             <input 
@@ -45,9 +45,9 @@ export default function Footer() {
             />
             <button 
               type="submit" 
-              className="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-r"
+              className="bg-pink-500 w-[130px] hover:bg-pink-600 text-white px-4 py-2 rounded-r"
             >
-              Join
+              reach us 
             </button>
           </form>
         </div>

@@ -1,4 +1,4 @@
-import { Phone, MessageCircle } from "lucide-react"
+import { Phone, MessageCircle, Instagram, Twitter ,Linkedin, Mail } from "lucide-react"
 
 export default function TopBar() {
   return (
@@ -24,9 +24,47 @@ export default function TopBar() {
           <Phone size={16} />
           <span>Call Us: +91 79904 70199</span>
         </a>
+
+<a
+  href="mailto:spinachachiever@gmail.com"
+  className="flex items-center gap-2 hover:underline"
+>
+  <Mail size={16}/>
+  <span>Mail Us: spinachachiever@gmail.com</span>
+</a>
       </div>
 
-      {/* Right Side */}
+      {/* Right Side - Social Links */}
+      <div className="flex items-center gap-4">
+        <a
+          href="https://instagram.com/yourprofile"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline flex items-center gap-1"
+        >
+          <Instagram size={16} />
+          <span>Instagram</span>
+        </a>
+        <a
+          href="https://twitter.com/yourprofile"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline flex items-center gap-1"
+        >
+          <Twitter size={16} />
+          <span>Twitter</span>
+        </a>
+
+            <a
+          href="https://www.linkedin.com/company/sapl-pets/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline flex items-center gap-1"
+        >
+          <Linkedin size={16} />
+          <span>Linkedin</span>
+        </a>
+      </div>
     </div>
   )
 }
