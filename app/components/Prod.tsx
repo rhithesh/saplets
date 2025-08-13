@@ -18,7 +18,7 @@ const products = [
   },
   {
     name: "Pet Wet Food ",
-    desc: "premium-quality pet wet food, made with wholesome, natural ingredients for optimal nutrition and taste. Trusted by brands worldwide for consistency, freshness, and pet satisfaction.",
+    desc: "Premium-quality pet wet food, made with wholesome, natural ingredients for optimal nutrition and taste. Trusted by brands worldwide for consistency, freshness, and pet satisfaction.",
     info: [" Pouch","Tray","Can","Sausage"
   ,"Paté"],
   
@@ -33,7 +33,7 @@ const products = [
   
   {
     name: "Animal broth",
-    desc: "food broths made with natural, wholesome ingredients to enhance nutrition and flavor. Trusted by brands worldwide for consistency, taste, and pet wellness.",
+    desc: "Food broths made with natural, wholesome ingredients to enhance nutrition and flavor. Trusted by brands worldwide for consistency, taste, and pet wellness.",
     info: ["Calcium rich", "Supports growth", "Gentle on stomach"],
     images: [
       "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&h=400&fit=crop",
@@ -46,8 +46,8 @@ const products = [
 
   {
     name: "Treats",
-    desc: "pet treats in a variety of shapes and flavors, crafted with natural, wholesome ingredients for health and taste. Trusted by brands worldwide for consistency, innovation, and pet satisfaction.",
-    info: ["Star shaped", "heart shaped", "two colour","tri colour"],
+    desc: "Pet treats in a variety of shapes and flavors, crafted with natural, wholesome ingredients for health and taste. Trusted by brands worldwide for consistency, innovation, and pet satisfaction.",
+    info: ["Star shaped", "Heart shaped", "Two colour","Tri colour"],
     images: [
       "https://images.unsplash.com/photo-1601758174493-bea9f8e7ce38?w=600&h=400&fit=crop",
       "/food/dry/heart.png",
@@ -249,7 +249,7 @@ export default function PremiumDyPetFood() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-6xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent mb-6 leading-tight"
           >
-            Sapelpets Pet Food
+            Salpets Pet Food
             <br />
             <span className="text-4xl lg:text-5xl bg-gradient-to-r  bg-clip-text text-transparent">
               Collection

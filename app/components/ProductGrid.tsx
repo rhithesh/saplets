@@ -40,8 +40,8 @@ export default function ProductGrid() {
                 <CardTitle className="text-lg">{p.name}</CardTitle>
                 <p className="text-primary font-semibold mt-2">₹{p.price}</p>
               </CardContent>
-              <CardFooter className="p-4 pt-0">
-                <Button className="w-full">Book Now</Button>
+              <CardFooter className="p-4 pt-0 ">
+                <Button asChild className="w-full hover:cursor-pointer ">Book Now</Button>
               </CardFooter>
             </Card>
           ))}

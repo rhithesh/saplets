@@ -143,7 +143,7 @@ export default function ServicesPage() {
   window.location.href =
     `mailto:spinachachiever@gmail.com?subject=Inquiry&body=Hello, I would like to know more...${service.title}`
 }
- className="mt-4 px-4 py-2 border border-gray-400 rounded-md font-medium hover:bg-gray-100 transition">
+ className="mt-4 px-4 hover:cursor-pointer py-2 border border-gray-400 rounded-md font-medium hover:bg-gray-100 transition">
                 {service.button}
               </button>
             </div>
