@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
+
 export default function Hero() {
   return (
     <section className="w-full bg-gray-50 py-12">

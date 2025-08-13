@@ -8,17 +8,17 @@ const testimonials = [
   {
     name: "Bella & Max",
     text: "Saplpets treats are the only thing Bella begs for now. Max loves the toys too!",
-    img: "/image.png"
+    img: "/customer/arjun.avif"
   },
   {
     name: "Rocky",
     text: "Fast delivery and premium quality — Rocky wags his tail every time the box arrives.",
-    img: "/image.png"
+    img: "/customer/karren.avif"
   },
   {
     name: "Luna",
     text: "I never thought I'd find stylish AND comfy beds. Luna is obsessed!",
-    img: "/image.png"
+    img: "/customer/robin.avif"
   }
 ]
 
