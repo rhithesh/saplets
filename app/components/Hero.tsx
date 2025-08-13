@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 
 export default function Hero() {
@@ -15,7 +16,9 @@ export default function Hero() {
           <p className="text-lg text-gray-700 mb-6">
             Crafted Quality, Loved by Pets Everywhere.
           </p>
-          <Button>Shop Now</Button>
+          <Button>
+            <Link href="/shop">Shop Now</Link>
+            </Button>
         </div>
 
         {/* Hero Image */}

@@ -19,9 +19,9 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li><Link href="/" className="hover:underline">Home</Link></li>
-            <li><Link href="/about" className="hover:underline">About Us</Link></li>
+            <li><Link href="/story" className="hover:underline">About Us</Link></li>
             <li><Link href="/shop" className="hover:underline">Shop</Link></li>
-            <li><Link href="/book-online" className="hover:underline">Book Online</Link></li>
+            <li><Link href="/book" className="hover:underline">Book Online</Link></li>
           </ul>
         </div>
 
@@ -29,7 +29,8 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-3">Customer Service</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/contact" className="hover:underline">Contact Us</Link></li>
+            <li><Link href="mailto:spinachachiever@gmail.com?subject=Inquiry&body=Hello, I would like to know more..."
+ className="hover:underline">Contact Us</Link></li>
           </ul>
         </div>
 
