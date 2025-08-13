@@ -139,7 +139,11 @@ export default function ServicesPage() {
             <div className="p-6">
               <h3 className="text-xl font-semibold">{service.title}</h3>
               <p className="text-lg text-gray-700 mt-2">{service.price}</p>
-              <button className="mt-4 px-4 py-2 border border-gray-400 rounded-md font-medium hover:bg-gray-100 transition">
+              <button onClick={() =>
+  window.location.href =
+    `mailto:spinachachiever@gmail.com?subject=Inquiry&body=Hello, I would like to know more...${service.title}`
+}
+ className="mt-4 px-4 py-2 border border-gray-400 rounded-md font-medium hover:bg-gray-100 transition">
                 {service.button}
               </button>
             </div>
