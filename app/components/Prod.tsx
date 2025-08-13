@@ -56,6 +56,19 @@ const products = [
     color: "from-rose-600 to-pink-700",
     accent: "bg-rose-500",
   },
+      {
+    name: "Supplements ",
+    desc: "Supplement powders, chews enriched with essential vitamins and nutrients to support overall health. Trusted by brands worldwide for purity, taste, and proven results.",
+    info: ["Extruded kibbles", "Oven-baked kibbles", "Cold-pressed kibbles"],
+    images: [
+      "https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1601758174493-bea9f8e7ce38?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&h=400&fit=crop",
+    ],
+    color: "from-teal-600 to-cyan-700",
+    accent: "bg-teal-500",
+  },
+
 ];
 
 function ImageSlider({ images, color }) {
@@ -173,13 +186,17 @@ function ProductCard({ product, index }) {
                   </motion.div>
                 ))}
               </div>
-
-              <motion.button
-                className={`w-full bg-gradient-to-r ${product.color} text-white font-bold py-4 px-8 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl`}
+                  <motion.a
+                href={`mailto:spinachachiever@gmail.com
+?subject=Enquiry about ${product.name}`}
+                className={`block w-full bg-gradient-to-r ${product.color} text-white font-bold py-4 px-8 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl text-center`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
+
+            
                 <span className="flex items-center justify-center space-x-2">
+                  
                   <span>Enquire Now</span>
                   <svg
                     className="w-5 h-5"
@@ -195,7 +212,7 @@ function ProductCard({ product, index }) {
                     />
                   </svg>
                 </span>
-              </motion.button>
+              </motion.a>
             </motion.div>
           </div>
         </div>
