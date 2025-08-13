@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -9,10 +10,16 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex">
             <Link href="/">
-              <span className="text-xl font-bold">Saplpets</span>
-            </Link>
+<Image
+  src="/next.svg"
+  alt="logo"
+  style={{ objectFit: "contain" }}
+  width={64}
+  height={64}
+/>
+         </Link>
           </div>
 
           {/* Menu */}
