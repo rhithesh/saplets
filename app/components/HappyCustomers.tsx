@@ -7,7 +7,7 @@ import { useState, useEffect } from "react"
 const testimonials = [
   {
     name: "Sia",
-    text: "Saplpets treats are the only thing Bella begs for now. Max loves the toys too!",
+    text: "Salpets treats are the only thing Bella begs for now. Max loves the toys too!",
     img: "/customer/sia.avif"
   },
   {

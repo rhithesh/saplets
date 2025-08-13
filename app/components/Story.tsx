@@ -127,7 +127,7 @@ export function StoryImage() {
       className="max-w-5xl mx-auto"
     >
       <Image
-        src="/story/SAPLpets.jpg"
+        src="/story/Salpets.jpg"
         alt="SAPL Pets"
         width={1200}
         height={600}
@@ -137,7 +137,7 @@ export function StoryImage() {
   );
 }
 
-export default function SaplpetsStory() {
+export default function SalpetsStory() {
   return (
     <section className="py-16 bg-white overflow-hidden">
       <StoryIntro />

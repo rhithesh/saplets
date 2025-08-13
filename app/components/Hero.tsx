@@ -11,7 +11,7 @@ export default function Hero() {
         {/* Text Content */}
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-extrabold text-primary mb-4">
-            Welcome to Saplpets
+            Welcome to Salpets
           </h1>
           <p className="text-lg text-gray-700 mb-6">
             Crafted Quality, Loved by Pets Everywhere.

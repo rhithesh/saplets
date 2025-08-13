@@ -1,8 +1,8 @@
-import SaplpetsStory from "../components/Story"
+import SalpetsStory from "../components/Story"
 export default function Story(){
 
     return(
         <>
-        <SaplpetsStory/></>
+        <SalpetsStory/></>
     )
 }

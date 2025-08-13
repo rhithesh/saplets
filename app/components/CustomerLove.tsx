@@ -10,7 +10,7 @@ const testimonials = [
     name: "Ananya Sharma",
     pet: "Bruno 🐶",
     img: "/pets/dog1.jpg",
-    text: "Saplpets treats are Bruno's absolute favorite! He literally jumps when the delivery arrives."
+    text: "Salpets treats are Bruno's absolute favorite! He literally jumps when the delivery arrives."
   },
   {
     name: "Rahul Mehta",
