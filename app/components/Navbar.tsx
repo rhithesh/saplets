@@ -37,7 +37,7 @@ export default function Navbar() {
           {/* Call to action */}
           <div className="flex items-center space-x-2">
             <Button asChild>
-              <Link href="/book">Book Now</Link>
+              <Link href="/book">Contact us</Link>
             </Button>
           </div>
         </div>
