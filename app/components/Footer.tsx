@@ -46,8 +46,14 @@ export default function Footer() {
             <button 
               type="submit" 
               className="bg-pink-500 w-[130px] hover:bg-pink-600 text-white px-4 py-2 rounded-r"
+
             >
-              reach us 
+              <a
+  href="mailto:spinachachiever@gmail.com?subject=Inquiry&body=Hello, I would like to know more..."
+>
+  Reach Us
+</a>
+
             </button>
           </form>
         </div>
