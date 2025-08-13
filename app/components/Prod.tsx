@@ -3,34 +3,11 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const products = [
-  {
-    name: "Saplets Wet Food – Chicken & Veg",
-    desc: "A blend of tender chicken and garden vegetables for complete dog nutrition.",
-    info: ["High protein", "Rich in vitamins", "No artificial flavors"],
-    images: [
-      "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=600&h=400&fit=crop",
-    ],
-    color: "from-amber-600 to-orange-700",
-    accent: "bg-amber-500",
-  },
-  {
-    name: "Saplets Wet Food – Lamb Feast",
-    desc: "Rich lamb chunks in gravy, perfect for muscle strength and taste.",
-    info: ["Iron rich", "Supports muscles", "Grain-free recipe"],
-    images: [
-      "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop",
-    ],
-    color: "from-red-600 to-pink-700",
-    accent: "bg-red-500",
-  },
-  {
-    name: "Saplets Wet Food – Salmon & Rice",
-    desc: "Omega-rich salmon with wholesome rice for a shiny coat and healthy digestion.",
-    info: ["Omega-3 rich", "Easily digestible", "Supports coat health"],
+
+    {
+    name: "Pet dry Food ",
+    desc: "We manufacture premium-quality pet dry food, crafted with the finest natural ingredients. Trusted by brands worldwide for nutrition, taste, and consistent excellence",
+    info: ["Extruded kibbles", "Oven-baked kibbles", "Cold-pressed kibbles"],
     images: [
       "https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1601758174493-bea9f8e7ce38?w=600&h=400&fit=crop",
@@ -40,8 +17,23 @@ const products = [
     accent: "bg-teal-500",
   },
   {
-    name: "Saplets Wet Food – Puppy Formula",
-    desc: "Gentle and nutrient-dense formula to support growing puppies.",
+    name: "Pet Wet Food ",
+    desc: "premium-quality pet wet food, made with wholesome, natural ingredients for optimal nutrition and taste. Trusted by brands worldwide for consistency, freshness, and pet satisfaction.",
+    info: [" Pouch","Tray","Can","Sausage"
+  ,"Paté"],
+  
+    images: [
+      "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=600&h=400&fit=crop",
+    ],
+    color: "from-emerald-600 to-green-700",
+    accent: "bg-emerald-500",
+  },
+  
+  {
+    name: "Animal broth",
+    desc: "food broths made with natural, wholesome ingredients to enhance nutrition and flavor. Trusted by brands worldwide for consistency, taste, and pet wellness.",
     info: ["Calcium rich", "Supports growth", "Gentle on stomach"],
     images: [
       "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&h=400&fit=crop",
@@ -51,22 +43,11 @@ const products = [
     color: "from-purple-600 to-indigo-700",
     accent: "bg-purple-500",
   },
+
   {
-    name: "Saplets Wet Food – Senior Dog Care",
-    desc: "Soft texture and joint-supporting ingredients for senior dogs.",
-    info: ["Joint support", "Soft texture", "Elderly dog friendly"],
-    images: [
-      "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=600&h=400&fit=crop",
-    ],
-    color: "from-emerald-600 to-green-700",
-    accent: "bg-emerald-500",
-  },
-  {
-    name: "Saplets Wet Food – Grain Free Turkey",
-    desc: "Delicious turkey chunks without grains, ideal for sensitive dogs.",
-    info: ["Hypoallergenic", "High digestibility", "No grains"],
+    name: "Treats",
+    desc: "pet treats in a variety of shapes and flavors, crafted with natural, wholesome ingredients for health and taste. Trusted by brands worldwide for consistency, innovation, and pet satisfaction.",
+    info: ["Star shaped", "heart shaped", "two colour","tri colour"],
     images: [
       "https://images.unsplash.com/photo-1601758174493-bea9f8e7ce38?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=600&h=400&fit=crop",
@@ -251,7 +232,7 @@ export default function PremiumDyPetFood() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-6xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent mb-6 leading-tight"
           >
-            Saplets Pet Food
+            Sapelpets Pet Food
             <br />
             <span className="text-4xl lg:text-5xl bg-gradient-to-r  bg-clip-text text-transparent">
               Collection
