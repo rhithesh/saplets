@@ -12,22 +12,24 @@ export default function Hero() {
             Welcome to Saplpets
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-            Your trusted partner in pet care, accessories, and love.
+            Crafted Quality, Loved by Pets Everywhere.
           </p>
           <Button>Shop Now</Button>
         </div>
 
         {/* Hero Image */}
-        <div className="flex-1">
-          <Image
-            src="/dog.webp"
-            alt="Happy pets with products"
-            width={600}
-            height={400}
-            className="object-cover"
-            priority
-          />
-        </div>
+<div className="flex-1">
+  <video
+    src="/dog.mp4"
+    width={600}
+    height={400}
+    className="object-cover"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+</div>
       </div>
     </section>
   );
