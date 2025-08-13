@@ -127,7 +127,7 @@ export function StoryImage() {
       className="max-w-5xl mx-auto"
     >
       <Image
-        src="/story/Salpets.jpg"
+        src="/story/SAPLpets.jpg"
         alt="SAPL Pets"
         width={1200}
         height={600}
