@@ -30,9 +30,6 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-3">Customer Service</h3>
           <ul className="space-y-2 text-sm">
             <li><Link href="/contact" className="hover:underline">Contact Us</Link></li>
-            <li><Link href="/faq" className="hover:underline">FAQs</Link></li>
-            <li><Link href="/returns" className="hover:underline">Returns & Refunds</Link></li>
-            <li><Link href="/shipping" className="hover:underline">Shipping Info</Link></li>
           </ul>
         </div>
 

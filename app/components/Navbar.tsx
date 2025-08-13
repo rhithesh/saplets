@@ -20,14 +20,17 @@ export default function Navbar() {
             <Link href="/" className="text-sm font-medium hover:text-primary">
               Home
             </Link>
-            <Link href="/about" className="text-sm font-medium hover:text-primary">
+            <Link href="/story" className="text-sm font-medium hover:text-primary">
               About Us
             </Link>
             <Link href="/book" className="text-sm font-medium hover:text-primary">
               Book Online
             </Link>
-            <Link href="/shop" className="text-sm font-medium hover:text-primary">
+            {/* <Link href="/shop" className="text-sm font-medium hover:text-primary">
               Shop
+            </Link> */}
+              <Link href="/shop" className="text-sm font-medium hover:text-primary">
+              Products
             </Link>
           </div>
 
