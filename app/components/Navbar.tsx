@@ -43,9 +43,11 @@ export default function Navbar() {
 
           {/* Call to action (Desktop) */}
           <div className="hidden md:flex items-center space-x-2">
-            <Button asChild>
-              <Link href="/book">Contact us</Link>
-            </Button>
+<Button asChild>
+  <Link href="mailto:spinachachiever@gmail.com?subject=Inquiry&body=Hello%2C%20I%20would%20like%20to%20know%20more...">
+    Contact us
+  </Link>
+</Button>
           </div>
 
           {/* Mobile Menu Button */}
