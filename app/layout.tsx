@@ -86,7 +86,7 @@ export default function RootLayout({
               sameAs: [
                 "https://www.facebook.com/Sapelpets",
                 "https://www.instagram.com/Sapelpets",
-                "https://www.linkedin.com/company/Sapelpets",
+                "https://www.linkedin.com/company/sapl-pets/",
               ],
               description:
                 "Premium private label pet food manufacturer. Organic & custom formulations for dogs, cats, and more.",
