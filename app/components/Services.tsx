@@ -93,7 +93,7 @@ export default function ServicesPage() {
       </div>
 
       {/* --- BENTO GRID --- */}
-      <section className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-6 auto-rows-[200px]">
+      {/* <section className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-6 auto-rows-[200px]">
         {bentoItems.map((item, i) => (
           <motion.div
             key={i}
@@ -115,10 +115,10 @@ export default function ServicesPage() {
             </div>
           </motion.div>
         ))}
-      </section>
+      </section> */}
 
       {/* --- SERVICES CARDS --- */}
-      <section className="max-w-6xl mx-auto px-6 pb-20 grid md:grid-cols-3 gap-8">
+      <section className="max-w-6xl mt-20 mx-auto px-6 pb-20 grid md:grid-cols-3 gap-8">
         {services.map((service, i) => (
           <motion.div
             key={i}

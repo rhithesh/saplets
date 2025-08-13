@@ -27,11 +27,11 @@ export default function Home() {
 
 
     {/* <SplitScrollShowcase/> */}
-    <div className=" bg-white">
+    {/* <div className=" bg-white">
           <FullSnapSections/>
 
 
-    </div>
+    </div> */}
         {/* <PetPersonality/> */}
 
     {/* <CustomerLove/> */}
