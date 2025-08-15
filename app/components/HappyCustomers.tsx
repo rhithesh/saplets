@@ -58,7 +58,7 @@ export default function HappyCustomers() {
         </motion.div>
 
         {/* Image */}
-        <motion.div 
+        {/* <motion.div 
           key={`${index}-img`}
           initial={{ opacity: 0, scale: 0.9 }} 
           animate={{ opacity: 1, scale: 1 }} 
@@ -72,7 +72,7 @@ export default function HappyCustomers() {
             height={350} 
             className="rounded-full border-4  shadow-lg object-cover"
           />
-        </motion.div>
+        </motion.div> */}
 
       </div>
     </section>

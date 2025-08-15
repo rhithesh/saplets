@@ -34,7 +34,11 @@ const products = [
   {
     name: "Animal Broth",
     desc: "Food broths made with natural, wholesome ingredients to enhance nutrition and flavor. Trusted by brands worldwide for consistency, taste, and pet wellness.",
-    info: ["Calcium rich", "Supports growth", "Gentle on stomach"],
+    info: ["Nutrient-rich",
+"health-supportive",
+
+"Hydrating and palatable"
+],
     images: [
       "/food/broth/broth1.png",
       "/food/broth/broth3.png",
