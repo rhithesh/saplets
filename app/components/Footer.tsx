@@ -26,13 +26,37 @@ export default function Footer() {
         </div>
 
         {/* Customer Service */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Customer Service</h3>
-          <ul className="space-y-2 text-sm">
-            <li><Link href="mailto:spinachachiever@gmail.com?subject=Inquiry&body=Hello, I would like to know more..."
- className="hover:underline">Contact Us</Link></li>
-          </ul>
-        </div>
+     <div>
+  <h3 className="text-lg font-semibold mb-3">Customer Service</h3>
+  
+  <ul className="space-y-2 text-sm">
+    <li>
+      <Link 
+        href="mailto:spinachachiever@gmail.com?subject=Inquiry&body=Hello, I would like to know more..."
+        className="hover:underline"
+      >
+        Contact Us
+      </Link>
+    </li>
+  </ul>
+
+  <div className="mt-4">
+    <p className="text-sm font-medium">Our Location</p>
+    <p className="text-sm">
+      G-305, Silora Industrial Area<br />
+      Phase-1, Kishangarh (Rajasthan), India
+    </p>
+    <Link 
+      href="https://maps.app.goo.gl/PPAsrXkfHsfzyvSh6" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:underline text-sm"
+    >
+      View on Google Maps
+    </Link>
+  </div>
+</div>
+
 
         {/* Newsletter */}
         <div>
