@@ -8,7 +8,7 @@ export default function Footer() {
         
         {/* Brand */}
         <div>
-          <h2 className="text-2xl font-bold text-white">Salpets</h2>
+          <h2 className="text-2xl font-bold text-white">SAPLPets</h2>
           <p className="mt-2 text-gray-400 text-sm">
             Where tails wag and hearts smile. Premium pet products delivered with love.
           </p>
@@ -61,7 +61,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Salpets. All rights reserved.
+        © {new Date().getFullYear()} SAPLPets. All rights reserved.
       </div>
     </footer>
   )

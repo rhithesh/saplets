@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const products = [
 
     {
-    name: "Pet dry Food ",
+    name: "Pet Dry Food ",
     desc: "We manufacture premium-quality pet dry food, crafted with the finest natural ingredients. Trusted by brands worldwide for nutrition, taste, and consistent excellence",
     info: ["Extruded kibbles", "Oven-baked kibbles", "Cold-pressed kibbles"],
     images: [
@@ -23,16 +23,16 @@ const products = [
   ,"Paté"],
   
     images: [
-      "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=600&h=400&fit=crop",
+      "/food/wet/wetfood1.png",
+      "/food/wet/wetfood3.png",
+      "/food/wet/wetfood2.png",
     ],
     color: "from-emerald-600 to-green-700",
     accent: "bg-emerald-500",
   },
   
   {
-    name: "Animal broth",
+    name: "Animal Broth",
     desc: "Food broths made with natural, wholesome ingredients to enhance nutrition and flavor. Trusted by brands worldwide for consistency, taste, and pet wellness.",
     info: ["Calcium rich", "Supports growth", "Gentle on stomach"],
     images: [
@@ -49,21 +49,22 @@ const products = [
     desc: "Pet treats in a variety of shapes and flavors, crafted with natural, wholesome ingredients for health and taste. Trusted by brands worldwide for consistency, innovation, and pet satisfaction.",
     info: ["Star shaped", "Heart shaped", "Two colour","Tri colour"],
     images: [
-      "https://images.unsplash.com/photo-1601758174493-bea9f8e7ce38?w=600&h=400&fit=crop",
-      "/food/dry/heart.png",
-      "/food/starshaped.png",
+      "/food/dry/4.png",
+      "/food/dry/1.png",
+      "/food/dry/2.png",
+      "/food/dry/3.png"
     ],
     color: "from-rose-600 to-pink-700",
     accent: "bg-rose-500",
   },
       {
-    name: "Supplements ",
+    name: "Supplement  ",
     desc: "Supplement powders, chews enriched with essential vitamins and nutrients to support overall health. Trusted by brands worldwide for purity, taste, and proven results.",
-    info: ["Extruded kibbles", "Oven-baked kibbles", "Cold-pressed kibbles"],
+    info: ["Supplement Chews", "Supplement Powder"],
     images: [
-      "https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1601758174493-bea9f8e7ce38?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&h=400&fit=crop",
+      "/food/supps/supplement2.png",
+      "/food/supps/supplement1.png",
+      "/food/supps/supplement3.png",
     ],
     color: "from-teal-600 to-cyan-700",
     accent: "bg-teal-500",
@@ -249,7 +250,7 @@ export default function PremiumDyPetFood() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-6xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent mb-6 leading-tight"
           >
-            Salpets Pet Food
+            SAPLPets Pet Food
             <br />
             <span className="text-4xl lg:text-5xl bg-gradient-to-r  bg-clip-text text-transparent">
               Collection
