@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sapelpets | Premium Pet Food Manufacturers",
+  title: "Saplpets | Premium Pet Food Manufacturers",
   description:
     "One-stop premium private label pet food manufacturer. Organic, custom formulations & global supply for dogs, cats & other pets.",
   keywords: [
@@ -31,27 +31,27 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    url: "https://www.Sapelpets.com",
-    title: "Sapelpets | Premium Pet Food Manufacturers",
+    url: "https://www.Saplpets.com",
+    title: "Saplpets | Premium Pet Food Manufacturers",
     description:
       "Premium Private Label Pet Food Manufacturer — Organic, healthy & custom formulations for global pet brands.",
-    siteName: "Sapelpets",
+    siteName: "Saplpets",
     images: [
       {
-        url: "https://www.Sapelpets.com/og-image.jpg",
+        url: "https://www.Saplpets.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Sapelpets Pet Food Manufacturing",
+        alt: "Saplpets Pet Food Manufacturing",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@Sapelpets",
-    title: "Sapelpets | Premium Pet Food Manufacturers",
+    site: "@Saplpets",
+    title: "Saplpets | Premium Pet Food Manufacturers",
     description:
       "Organic & custom private label pet food manufacturing for dogs, cats & more.",
-    images: ["https://www.Sapelpets.com/og-image.jpg"],
+    images: ["https://www.Saplpets.com/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -59,10 +59,10 @@ export const metadata: Metadata = {
     nocache: false,
   },
   alternates: {
-    canonical: "https://www.Sapelpets.com",
+    canonical: "https://www.Saplpets.com",
   },
-  authors: [{ name: "Sapelpets Team", url: "https://www.Sapelpets.com/story" }],
-  metadataBase: new URL("https://www.Sapelpets.com"),
+  authors: [{ name: "Saplpets Team", url: "https://www.Saplpets.com/story" }],
+  metadataBase: new URL("https://www.Saplpets.com"),
 };
 
 export default function RootLayout({
@@ -80,12 +80,12 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Sapelpets",
-              url: "https://www.Sapelpets.com",
-              logo: "https://www.Sapelpets.com/logo.png",
+              name: "Saplpets",
+              url: "https://www.Saplpets.com",
+              logo: "https://www.Saplpets.com/logo.png",
               sameAs: [
-                "https://www.facebook.com/Sapelpets",
-                "https://www.instagram.com/Sapelpets",
+                "https://www.facebook.com/Saplpets",
+                "https://www.instagram.com/Saplpets",
                 "https://www.linkedin.com/company/sapl-pets/",
               ],
               description:
