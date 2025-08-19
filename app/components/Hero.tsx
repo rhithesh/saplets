@@ -24,7 +24,7 @@ export default function Hero() {
         {/* Hero Image */}
 <div className="flex-1">
   <video
-    src="/dog.mp4"
+    src="https://lbql7kbjpr.ufs.sh/f/LyJ0HpBmhVvA77KY8cq6jOtwJopYGuLevF1VTclA9kQrxa8D"
     width={600}
     height={400}
     className="object-cover"
