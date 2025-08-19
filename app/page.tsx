@@ -16,7 +16,7 @@ import FullSnapSections from "./components/Swap"
 import CompanySlider from "./components/newComponent"
 import MobileCallBar from "./components/MobileCall";
 import TopBar from "./components/TopBar";
-import {WorldMap} from "./components/MapComponent";
+import MapComponent from "./components/MapComponent";
 
 export default function Home() {
   return (
@@ -39,7 +39,7 @@ export default function Home() {
     {/* <ScrollSwapShowcase/> */}
     {/* <DogPoem/> */}
     <HappyCustomers/>
-    <WorldMap/>
+    <MapComponent/>
     <OurValues/>
 
     
