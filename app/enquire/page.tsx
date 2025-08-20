@@ -199,10 +199,16 @@ export default function EnquiryPage() {
                   <SelectValue placeholder="Choose your Industry Segment" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="it">IT Services</SelectItem>
-                  <SelectItem value="finance">Finance</SelectItem>
-                  <SelectItem value="retail">Retail</SelectItem>
-                  <SelectItem value="manufacturing">Manufacturing</SelectItem>
+<SelectItem value="petfood">Pet Food Startups</SelectItem>
+<SelectItem value="entrepreneurs">Entrepreneurs & Private Investors</SelectItem>
+<SelectItem value="fmcg">FMCG Companies</SelectItem>
+<SelectItem value="agriculture">Agricultural & Animal Feed Companies</SelectItem>
+<SelectItem value="petproducts">Pet Product & Accessory Brands</SelectItem>
+<SelectItem value="vethospitals">Veterinary Hospital Chains & Large Clinics</SelectItem>
+<SelectItem value="groomingchains">Professional Pet Grooming Chains</SelectItem>
+<SelectItem value="breeders">Large-Scale Dog & Cat Breeders</SelectItem>
+<SelectItem value="kennels">Kennel & Boarding Facilities</SelectItem>
+
                 </SelectContent>
               </Select>
 

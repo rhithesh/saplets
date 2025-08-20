@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -15,27 +16,49 @@ const data = [
 
 export default function MinimumOrderTable() {
   return (
-    <div className="overflow-x-auto ">
-      <table className="min-w-full border border-gray-300 text-left">
-        <thead className="bg-gray-100">
+    <div className="overflow-x-auto py-12">
+      <motion.table
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="min-w-full shadow-2xl rounded-2xl overflow-hidden border border-gray-200"
+      >
+        {/* Table Head */}
+        <thead className="bg-gradient-to-r from-pink-500 via-pink-400 to-yellow-400 text-white">
           <tr>
-            <th className="border border-gray-300 px-6 py-3 font-bold">
+            <th className="px-8 py-6 text-left text-2xl font-bold">
               Product Category
             </th>
-            <th className="border border-gray-300 px-6 py-3 font-bold">
+            <th className="px-8 py-6 text-left text-2xl font-bold">
               Minimum Order Quantity
             </th>
           </tr>
         </thead>
-        <tbody>
+
+        {/* Table Body */}
+        <tbody className="bg-white text-lg">
           {data.map((item, index) => (
-            <tr key={index} className="hover:bg-gray-50">
-              <td className="border border-gray-300 px-6 py-3">{item.category}</td>
-              <td className="border border-gray-300 px-6 py-3">{item.quantity}</td>
-            </tr>
+            <motion.tr
+              key={index}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className={`${
+                index % 2 === 0 ? "bg-gray-50" : "bg-white"
+              } hover:bg-pink-50 transition-colors`}
+            >
+              <td className="px-8 py-6 border-b border-gray-200 text-gray-800">
+                {item.category}
+              </td>
+              <td className="px-8 py-6 border-b border-gray-200 text-gray-900 font-semibold">
+                {item.quantity}
+              </td>
+            </motion.tr>
           ))}
         </tbody>
-      </table>
+      </motion.table>
     </div>
   );
 }

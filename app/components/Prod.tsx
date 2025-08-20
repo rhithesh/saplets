@@ -198,8 +198,7 @@ function ProductCard({ product, index }) {
                 ))}
               </div>
                   <motion.a
-                href={`mailto:spinachachiever@gmail.com
-?subject=Enquiry about ${product.name}`}
+                href={`/enquire`}
                 className={`block w-full bg-gradient-to-r ${product.color} text-white font-bold py-4 px-8 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl text-center`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
