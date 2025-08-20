@@ -10,7 +10,7 @@ export default function OurValues() {
     {
       icon: Handshake,
       title: "Honest Partnerships",
-      desc: "We work closely with trusted suppliers and customers with complete transparency."
+      desc: "We work closely with you to ensure the products we make perfectly reflect your brand."
     },
     {
       icon: Award,

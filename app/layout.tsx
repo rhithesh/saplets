@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import MobileCallBar from "./components/MobileCall";
 import "leaflet/dist/leaflet.css"
 import "./globals.css"
+import { Cta } from "./components/Cta";
 
 
 const geistSans = Geist({
@@ -103,12 +104,18 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable}  antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable}  bg-white antialiased`}
       >
         <TopBar />
         <Navbar />
         {children}
+        <div className=" bg-white">
+                  <Cta/>
+
+
+        </div>
         <Footer />
+
         <MobileCallBar />
       </body>
     </html>

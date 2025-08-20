@@ -44,7 +44,7 @@ const ProcessPage = () => {
 </h1>
 
 
-      <p className="text-center max-w-2xl mx-auto mb-16 text-gray-700">
+      <p className="text-center text-md max-w-2xl mx-auto mb-16 text-gray-700">
         From initial idea to global distribution, our proven process ensures a seamless journey for your brand. We manage every step with precision and expertise.
       </p>
 

@@ -19,6 +19,7 @@ import TopBar from "./components/TopBar";
 import MapComponent from "./components/MapComponent";
 import PackagingFormats from "./components/Packaging";
 import ProcessSnapshot from "./components/ProcessSnapshot";
+import ProductPortfolio from "./components/productprotfolio";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <CompanySlider/>
 
             <WhyShop/>
+            <ProductPortfolio/>
             <ProcessSnapshot/>
 
 

@@ -6,8 +6,8 @@ import MinimumOrderTable from "./TableProduct";
 const products = [
 
     {
-    name: "Pet Dry Food ",
-    desc: "We manufacture premium-quality pet dry food, crafted with the finest natural ingredients. Trusted by brands worldwide for nutrition, taste, and consistent excellence",
+    name: ["Pet Dry Food "," (MOQ 500 kg per SKU)"],
+    desc: "We manufacture premium-quality pet dry food, crafted with the finest natural ingredients. Trusted by brands worldwide for nutrition, taste, and consistent excellence ",
     info: ["Extruded kibbles", "Oven-baked kibbles", "Cold-pressed kibbles"],
     images: [
       "/food/dryf/d1.png",
@@ -18,7 +18,7 @@ const products = [
     accent: "bg-teal-500",
   },
   {
-    name: "Pet Wet Food ",
+    name: ["Pet Wet Food "," (MOQ 100 kg per SKU)"],
     desc: "Premium-quality pet wet food, made with wholesome, natural ingredients for optimal nutrition and taste. Trusted by brands worldwide for consistency, freshness, and pet satisfaction.",
     info: [" Pouch","Tray","Can","Sausage"
   ,"Paté"],
@@ -33,7 +33,7 @@ const products = [
   },
   
   {
-    name: "Animal Broth",
+    name: ["Animal Broth"," (MOQ 100 kg per SKU)"],
     desc: "Food broths made with natural, wholesome ingredients to enhance nutrition and flavor. Trusted by brands worldwide for consistency, taste, and pet wellness.",
     info: ["Nutrient-rich",
 "health-supportive",
@@ -50,7 +50,7 @@ const products = [
   },
 
   {
-    name: "Treats",
+    name:[ "Treats"," (MOQ 25 kg per SKU)"],
     desc: "Pet treats in a variety of shapes and flavors, crafted with natural, wholesome ingredients for health and taste. Trusted by brands worldwide for consistency, innovation, and pet satisfaction.",
     info: [
  , "Jerky" 
@@ -68,7 +68,7 @@ const products = [
     accent: "bg-rose-500",
   },
       {
-    name: "Supplement  ",
+    name: ["Supplement  "," MOQ(25 kg per SKU)"],
     desc: "Supplement powders, chews enriched with essential vitamins and nutrients to support overall health. Trusted by brands worldwide for purity, taste, and proven results.",
     info: ["Supplement Chews", "Supplement Powder"],
     images: [
@@ -174,7 +174,7 @@ function ProductCard({ product, index }) {
               </div>
 
               <h3 className="text-2xl font-bold text-gray-800 mb-4 leading-tight">
-                {product.name}
+                {product.name[0]} <span className=" text-sm">{product.name[1]}</span>
               </h3>
 
               <p className="text-gray-600 mb-6 text-lg leading-relaxed">
@@ -320,7 +320,7 @@ export default function PremiumDyPetFood() {
 
 
       {/* CTA Section */}
-      <section className="relative z-10 max-w-4xl mx-auto px-6 pb-20 text-center">
+      {/* <section className="relative z-10 max-w-4xl mx-auto px-6 pb-20 text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -328,22 +328,22 @@ export default function PremiumDyPetFood() {
           className="bg-gradient-to-br from-purple-900 to-pink-900 rounded-3xl p-12 shadow-2xl text-white"
         >
           <h2 className="text-4xl font-bold mb-6">
-            Give Your Pet the Premium Nutrition They Deserve
+            The Quality Your Customers Expect. The Partner Your Brand Deserves.
           </h2>
           <p className="text-xl opacity-90 mb-8">
             Contact us today to learn more about our premium pet food collection
           </p>
          <motion.button
-  onClick={() => window.location.href = "mailto:spinachachiever@gmail.com"}
+  onClick={() => window.location.href = "/enquire"}
   className="bg-white text-purple-900 font-bold py-4 px-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
 >
-  Get In Touch
+  =Start your brand today
 </motion.button>
 
         </motion.div>
-      </section>
+      </section> */}
     </div>
   );
 }
