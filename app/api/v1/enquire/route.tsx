@@ -39,7 +39,7 @@ export async function POST(req: Request) {
 
     await resend.emails.send({
       from: "Enquiries <no-reply@hithesh.live>",
-      to: "shreychandak200@gmail.com",
+      to: "spinachachiever@gmail.com",
       subject: `New Enquiry from ${firstName} ${lastName}`,
       react: <EnquiryEmail {...body} />, // ✅ spread works correctly
     });
