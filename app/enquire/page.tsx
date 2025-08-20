@@ -209,6 +209,7 @@ export default function EnquiryPage() {
 <SelectItem value="breeders">Large-Scale Dog & Cat Breeders</SelectItem>
 <SelectItem value="kennels">Kennel & Boarding Facilities</SelectItem>
 <SelectItem value="others">others</SelectItem>
+<SelectItem value="Petpreneur">Petpreneur</SelectItem>
 
 
                 </SelectContent>
