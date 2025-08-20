@@ -10,14 +10,14 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
         {/* Text Content */}
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-primary mb-4">
-            Welcome to SAPLPets
+          <h1 className="text-4xl md:text-3xl font-extrabold text-primary mb-4">
+            Premium Private-Label Pet Food—from Concept to Shelf
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-            Crafted Quality, Loved by Pets Everywhere.
+            From Formula to Freight. One facility for all your pet food needs.
           </p>
           <Button>
-            <Link href="/shop">Shop Now</Link>
+            <Link href="/enquire">Start today</Link>
             </Button>
         </div>
 

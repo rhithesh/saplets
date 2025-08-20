@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PawPrint, Lightbulb, Factory } from "lucide-react";
 import { motion } from "framer-motion";
+import QualityCertifications from "./Certifications"
 
 // Word-by-word animation for intro text
 const sentence = {
@@ -143,7 +144,8 @@ export default function SAPLPetsStory() {
       <StoryIntro />
       <StoryDetails />
       <StoryHighlights />
-      <StoryImage />
+      <QualityCertifications/>
+      {/* <StoryImage /> */}
     </section>
   );
 }

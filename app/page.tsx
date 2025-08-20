@@ -17,14 +17,17 @@ import CompanySlider from "./components/newComponent"
 import MobileCallBar from "./components/MobileCall";
 import TopBar from "./components/TopBar";
 import MapComponent from "./components/MapComponent";
+import PackagingFormats from "./components/Packaging";
+import ProcessSnapshot from "./components/ProcessSnapshot";
 
 export default function Home() {
   return (
 <>
     <Hero/>
-        {/* <CompanySlider/> */}
+        <CompanySlider/>
 
             <WhyShop/>
+            <ProcessSnapshot/>
 
 
     {/* <SplitScrollShowcase/> */}
@@ -38,7 +41,8 @@ export default function Home() {
     {/* <CustomerLove/> */}
     {/* <ScrollSwapShowcase/> */}
     {/* <DogPoem/> */}
-    <HappyCustomers/>
+    {/* <HappyCustomers/> */}
+    <PackagingFormats/>
     <MapComponent/>
     <OurValues/>
 

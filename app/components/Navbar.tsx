@@ -34,17 +34,20 @@ export default function Navbar() {
               About Us
             </Link>
             <Link href="/book" className="text-sm font-medium hover:text-primary">
-              Book Online
+              Start your prject
             </Link>
             <Link href="/shop" className="text-sm font-medium hover:text-primary">
               Products
             </Link>
+             {/* <Link href="/shop" className="text-sm font-medium hover:text-primary">
+              learn More
+            </Link> */}
           </div>
 
           {/* Call to action (Desktop) */}
           <div className="hidden md:flex items-center space-x-2">
 <Button asChild>
-  <Link href="mailto:spinachachiever@gmail.com?subject=Inquiry&body=Hello%2C%20I%20would%20like%20to%20know%20more...">
+  <Link href="/enquire">
     Contact us
   </Link>
 </Button>
@@ -94,7 +97,7 @@ export default function Navbar() {
 
                 }} asChild>
               
-                <Link  href="mailto:spinachachiever@gmail.com?subject=Inquiry&body=Hello%2C%20I%20would%20like%20to%20know%20more...">
+                <Link  href="/enquire">
     Contact us
   </Link>
 

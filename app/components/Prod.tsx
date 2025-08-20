@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import MinimumOrderTable from "./TableProduct";
 
 const products = [
 
@@ -51,11 +52,16 @@ const products = [
   {
     name: "Treats",
     desc: "Pet treats in a variety of shapes and flavors, crafted with natural, wholesome ingredients for health and taste. Trusted by brands worldwide for consistency, innovation, and pet satisfaction.",
-    info: ["Star shaped", "Heart shaped", "Two colour","Tri colour"],
+    info: [
+ , "Jerky" 
+,"Formed"
+ , "Pasty" 
+,"Novel Treats"
+],
     images: [
       "/food/dry/4.png",
       "/food/dry/1.png",
-      "/food/dry/2.png",
+      // "/food/dry/2.png",
       "/food/dry/3.png"
     ],
     color: "from-rose-600 to-pink-700",
@@ -308,6 +314,10 @@ export default function PremiumDyPetFood() {
           ))}
         </div>
       </section>
+     <div className="flex justify-center items-center px-6 mx-40 min-h-[50vh] mb-40">
+  <MinimumOrderTable />
+</div>
+
 
       {/* CTA Section */}
       <section className="relative z-10 max-w-4xl mx-auto px-6 pb-20 text-center">

@@ -35,6 +35,46 @@ interface FormData {
 }
 
 export default function EnquiryPage() {
+
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault()
+  setIsSubmitting(true)
+
+  try {
+    const res = await fetch("/api/v1/enquire", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    })
+
+    if (!res.ok) {
+      throw new Error("Failed to submit")
+    }
+
+    setFormData({
+      firstName: "",
+      lastName: "",
+      company: "",
+      designation: "",
+      email: "",
+      phone: "",
+      city: "",
+      state: "",
+      country: "India",
+      website: "",
+      industry: "",
+      products: "",
+      source: "",
+      message: "",
+      consent: true,
+    })
+  } catch (error) {
+    console.error("Error submitting form:", error)
+  } finally {
+    setIsSubmitting(false)
+  }
+}
+
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
@@ -58,40 +98,6 @@ export default function EnquiryPage() {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    if (!formData.firstName || !formData.email || !formData.message) {
-      setIsSubmitting(false)
-      return
-    }
-
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 1000))
-      setFormData({
-        firstName: "",
-        lastName: "",
-        company: "",
-        designation: "",
-        email: "",
-        phone: "",
-        city: "",
-        state: "",
-        country: "India",
-        website: "",
-        industry: "",
-        products: "",
-        source: "",
-        message: "",
-        consent: true,
-      })
-    } catch (error) {
-      console.error("Error submitting form:", error)
-    } finally {
-      setIsSubmitting(false)
-    }
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white py-12 px-6">

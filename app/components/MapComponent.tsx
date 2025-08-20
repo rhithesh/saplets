@@ -12,12 +12,13 @@ const Popup = dynamic(() => import("react-leaflet").then(m => m.Popup), { ssr: f
 
 // Cities
 const cities = [
-  { name: "Paris", coords: [48.8566, 2.3522] },
-  { name: "London", coords: [51.5074, -0.1278] },
-  { name: "Mumbai", coords: [19.076, 72.8777] },
-  { name: "New York", coords: [40.7128, -74.006] },
-  { name: "Sydney", coords: [-33.8688, 151.2093] },
-]
+  { name: "India (New Delhi)", coords: [28.6139, 77.2090] },
+  { name: "UK (London)", coords: [51.5072, -0.1276] },
+  { name: "France (Paris)", coords: [48.8566, 2.3522] },
+  { name: "Georgia (Tbilisi)", coords: [41.7151, 44.8271] },
+  { name: "USA (Washington, D.C.)", coords: [38.9072, -77.0369] },
+  { name: "Australia (Canberra)", coords: [-35.2809, 149.1300] }
+];
 
 export default function MapComponent() {
   const [L, setL] = useState<any>(null)

@@ -3,57 +3,56 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PawPrint, Truck, ShieldCheck, Heart, Sparkles } from "lucide-react";
+import {
+  FlaskConical,
+  Beaker,
+  Boxes,
+  ShieldCheck,
+  Package,
+  FileCheck,
+} from "lucide-react";
 
 export default function WhyShop() {
   const features = [
     {
-      icon: PawPrint,
-      title: "Premium Quality",
-      desc: "Only the best products for your furry friends.",
-      className: "lg:col-span-2",
+      icon: FlaskConical,
+      title: "R&D & Custom Formulation",
+      desc: "Innovative recipes tailored to your brand’s needs, whether it’s functional nutrition, premium positioning, or market-specific demands.",
     },
     {
-      icon: Truck,
-      title: "Fast Delivery",
-      desc: "Quick and reliable delivery to your doorstep.",
-      className: "lg:row-span-2",
+      icon: Beaker,
+      title: "Pilot & Stability Testing",
+      desc: "Small-batch trials and shelf-life testing to guarantee performance, palatability, and long-term product stability.",
+    },
+    {
+      icon: Boxes,
+      title: "Ingredient Sourcing & Traceability",
+      desc: "Trusted global suppliers with full transparency and traceability from farm to formulation.",
     },
     {
       icon: ShieldCheck,
-      title: "Trusted & Safe",
-      desc: "All items are tested for safety and durability.",
-      className: "",
+      title: "Quality Assurance & Quality Control",
+      desc: "Stringent QA/QC protocols to meet international safety and compliance standards.",
     },
     {
-      icon: Heart,
-      title: "Loved by Pets",
-      desc: "Products designed to make pets happy and healthy.",
-      className: "lg:col-span-2",
+      icon: Package,
+      title: "Packaging & Dieline Support",
+      desc: "Creative and functional packaging solutions designed to stand out on shelves while ensuring freshness and compliance.",
     },
     {
-      icon: Sparkles,
-      title: "Exclusive Offers",
-      desc: "Special discounts and bundles for loyal customers.",
-      className: "",
+      icon: FileCheck,
+      title: "Export Documentation & Compliance",
+      desc: "Complete support with international regulatory documentation, making cross-border trade seamless.",
     },
   ];
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">
-          Why Shop From Us
+          The SAPL Pets Advantage:
         </h2>
-        <div
-          className="
-            grid grid-cols-1
-            sm:grid-cols-2
-            lg:grid-cols-4
-            auto-rows-[200px]
-            gap-6
-          "
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {features.map((f, i) => (
             <motion.div
               key={i}
@@ -62,19 +61,19 @@ export default function WhyShop() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
               whileHover={{
-                scale: 1.05,
+                scale: 1.03,
                 rotate: 1,
                 transition: { duration: 0.2 },
               }}
-              className={f.className}
+              className="h-full"
             >
-              <Card className="shadow-md flex flex-col justify-center items-center p-6 h-full">
-                <CardHeader className="p-0 flex flex-col items-center">
-                  <f.icon className="h-10 w-12 text-primary" />
-                  <CardTitle className=" text-lg">{f.title}</CardTitle>
+              <Card className="shadow-md flex flex-col justify-between items-center p-6 h-full">
+                <CardHeader className="p-0 flex flex-col items-center text-center">
+                  <f.icon className="h-10 w-12 text-primary mb-3" />
+                  <CardTitle className="text-lg">{f.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="  p-0 mt-2">
-                  <p className="text-gray-600">{f.desc}</p>
+                <CardContent className="p-0 mt-3 text-center flex-1 flex items-center">
+                  <p className="text-gray-600 text-[20px]">{f.desc}</p>
                 </CardContent>
               </Card>
             </motion.div>
