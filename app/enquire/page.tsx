@@ -253,7 +253,7 @@ export default function EnquiryPage() {
                   }
                 />
                 <Label htmlFor="consent" className="text-sm text-gray-600">
-                  I allow SalPets and its representatives to contact me.
+                  I allow Saplpets and its representatives to contact me.
                 </Label>
               </div>
 
