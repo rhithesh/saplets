@@ -6,7 +6,7 @@ export default function MobileCallBar() {
     <div className="fixed bottom-0 left-0 w-full bg-green-500 text-white flex justify-around items-center py-3 md:hidden z-50 shadow-lg">
       {/* Call / WhatsApp */}
       <Link
-        href="https://wa.me/919876543210" // Replace with your WhatsApp number
+        href="https://wa.me/917996916561" // Replace with your WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-2 text-lg font-semibold"
