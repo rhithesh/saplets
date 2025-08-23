@@ -6,9 +6,9 @@ import { useState } from "react";
 
 const certifications = [
   {
-    name: "CAPEXIAL",
-    description: "CAPEXIAL",
-    image: "/images/1.jfif", // ✅ your image path
+    name: "CAPEXIL",
+    description: "CAPEXIL",
+    image: "/images/1.jpg", // ✅ your image path
   },
   {
     name: "HACCP",
