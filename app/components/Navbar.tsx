@@ -83,7 +83,7 @@ export default function Navbar() {
               className="text-sm font-medium hover:text-primary"
               onClick={() => setIsOpen(false)}
             >
-              Book Online
+              Start your project
             </Link>
             <Link
               href="/shop"
