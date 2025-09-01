@@ -75,6 +75,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="tWiekXgAPZ1--I_4lL2ll5zlGCxjaHgM_jx3Ikistho" />
         {/* Leaflet CSS */}
         <link
           rel="stylesheet"
