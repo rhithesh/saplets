@@ -5,10 +5,8 @@ import TopBar from "./components/TopBar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import MobileCallBar from "./components/MobileCall";
-import "leaflet/dist/leaflet.css"
-import "./globals.css"
+import "leaflet/dist/leaflet.css";
 import { Cta } from "./components/Cta";
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,54 +18,53 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
-  title: "Saplpets | Premium Pet Food Manufacturers",
+  title: "Top Pet Food Manufacturer in India | SAPLPets",
   description:
-    "One-stop premium private label pet food manufacturer. Organic, custom formulations & global supply for dogs, cats & other pets.",
+    "SAPLPets is a leading private-label pet food manufacturer in India, specializing in premium, organic, and custom formulations. Full-service solutions from R&D to export.",
   keywords: [
-    "pet food manufacturer",
-    "private label pet food",
-    "organic pet food",
-    "custom pet food formulations",
-    "dog food manufacturer",
-    "cat food manufacturer",
-    "pet treats wholesale",
+    "top pet food manufacturer India",
+    "pet food production India",
+    "private label pet food India",
+    "organic pet food India",
+    "custom pet food formulations India",
+    "dog food manufacturer India",
+    "cat food manufacturer India",
+    "pet treats manufacturer India",
   ],
   openGraph: {
     type: "website",
-    url: "https://www.Saplpets.com",
-    title: "Saplpets | Premium Pet Food Manufacturers",
+    url: "https://www.saplpets.com",
+    title: "Top Pet Food Manufacturer in India | SAPLPets",
     description:
-      "Premium Private Label Pet Food Manufacturer — Organic, healthy & custom formulations for global pet brands.",
-    siteName: "Saplpets",
+      "SAPLPets – Trusted private-label pet food manufacturer in India. Organic, premium, and custom formulations with global export support.",
+    siteName: "SAPLPets",
     images: [
       {
-        url: "https://www.Saplpets.com/og-image.jpg",
+        url: "https://www.saplpets.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Saplpets Pet Food Manufacturing",
+        alt: "SAPLPets Pet Food Manufacturer India",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@Saplpets",
-    title: "Saplpets | Premium Pet Food Manufacturers",
+    title: "Top Pet Food Manufacturer in India | SAPLPets",
     description:
-      "Organic & custom private label pet food manufacturing for dogs, cats & more.",
-    images: ["https://www.Saplpets.com/og-image.jpg"],
+      "Premium private-label & organic pet food manufacturer in India — end-to-end solutions from formulation to export.",
+    images: ["https://www.saplpets.com/og-image.jpg"],
   },
   robots: {
     index: true,
     follow: true,
-    nocache: false,
   },
   alternates: {
-    canonical: "https://www.Saplpets.com",
+    canonical: "https://www.saplpets.com",
   },
-  authors: [{ name: "Saplpets Team", url: "https://www.Saplpets.com/story" }],
-  metadataBase: new URL("https://www.Saplpets.com"),
+  authors: [{ name: "SAPLPets Team", url: "https://www.saplpets.com/story" }],
+  metadataBase: new URL("https://www.saplpets.com"),
 };
 
 export default function RootLayout({
@@ -78,44 +75,56 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Leaflet CSS */}
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossOrigin=""
+        />
+
         {/* JSON-LD Structured Data */}
-
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossOrigin="" />
-{/* <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script> */}
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Saplpets",
-              url: "https://www.Saplpets.com",
-              logo: "https://www.Saplpets.com/logo.png",
+              "@type": "LocalBusiness",
+              name: "SAPLPets",
+              url: "https://www.saplpets.com",
+              logo: "https://www.saplpets.com/logo.png",
+              image: "https://www.saplpets.com/og-image.jpg",
+              description:
+                "Premium private-label pet food manufacturer in India. Organic, custom formulations, packaging, QA/QC, and export support.",
+              telephone: "+91 79904 70199",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress:
+                  "G-305, Silora Industrial Area, Phase-1, Kishangarh",
+                addressLocality: "Kishangarh",
+                addressRegion: "Rajasthan",
+                postalCode: "305801",
+                addressCountry: "IN",
+              },
               sameAs: [
                 "https://www.facebook.com/Saplpets",
                 "https://www.instagram.com/Saplpets",
                 "https://www.linkedin.com/company/sapl-pets/",
               ],
-              description:
-                "Premium private label pet food manufacturer. Organic & custom formulations for dogs, cats, and more.",
             }),
           }}
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable}  bg-white antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-white antialiased`}
       >
         <TopBar />
         <Navbar />
         {children}
-        <div className=" bg-white">
-                  <Cta/>
-
-
+        <div className="bg-white">
+          <Cta />
         </div>
         <Footer />
-
         <MobileCallBar />
       </body>
     </html>
