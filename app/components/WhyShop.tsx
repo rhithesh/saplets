@@ -17,7 +17,7 @@ export default function WhyShop() {
     {
       icon: FlaskConical,
       title: "R&D & Custom Formulation",
-      desc: "Innovative recipes tailored to your brand’s needs, whether it’s functional nutrition, premium positioning, or market-specific demands.",
+      desc: "Innovative recipes tailored to your brand's needs, whether it's functional nutrition, premium positioning, or market-specific demands.",
     },
     {
       icon: Beaker,
@@ -47,33 +47,41 @@ export default function WhyShop() {
   ];
 
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">
-          The SAPL Pets Advantage:
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <section className="py-32 bg-background relative overflow-hidden">
+      {/* Subtle background elements */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-3/4 bg-main/[0.02] rounded-full blur-3xl"></div>
+      
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
+        {/* Apple-style heading */}
+        <div className="text-center mb-24">
+          <h2 className="text-4xl md:text-5xl font-medium tracking-tight mb-6">
+            The SAPL Pets Advantage
+          </h2>
+          <p className="text-xl text-foreground/60 max-w-2xl mx-auto leading-relaxed">
+            End-to-end solutions for premium pet food manufacturing
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((f, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-              whileHover={{
-                scale: 1.03,
-                rotate: 1,
-                transition: { duration: 0.2 },
-              }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
+              whileHover={{ y: -4 }}
               className="h-full"
             >
-              <Card className="shadow-md flex flex-col justify-between items-center p-6 h-full">
-                <CardHeader className="p-0 flex flex-col items-center text-center">
-                  <f.icon className="h-10 w-12 text-primary mb-3" />
-                  <CardTitle className="text-lg">{f.title}</CardTitle>
+              <Card className="glass h-full border-0 hover:shadow-lg transition-shadow duration-300 group">
+                <CardHeader className="p-8 pb-4">
+                  <div className="w-12 h-12 rounded-2xl bg-main/10 flex items-center justify-center mb-4 group-hover:bg-main/20 transition-colors duration-300">
+                    <f.icon className="h-6 w-6 text-main" />
+                  </div>
+                  <CardTitle className="text-xl font-medium leading-tight">{f.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="p-0 mt-3 text-center flex-1 flex items-center">
-                  <p className="text-gray-600 text-[20px]">{f.desc}</p>
+                <CardContent className="p-8 pt-2">
+                  <p className="text-foreground/60 text-base leading-relaxed">{f.desc}</p>
                 </CardContent>
               </Card>
             </motion.div>
