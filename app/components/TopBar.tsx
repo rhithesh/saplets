@@ -13,7 +13,7 @@ export default function TopBar() {
           className="flex items-center gap-2 hover:underline"
         >
           <MessageCircle size={16} />
-          <span>WhatsApp: +91-9428563045</span>
+          <span>WhatsApp: +919428563045</span>
         </a>
 
         {/* Phone Link */}
