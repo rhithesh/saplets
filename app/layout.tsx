@@ -97,7 +97,7 @@ export default function RootLayout({
               image: "https://www.saplpets.com/og-image.jpg",
               description:
                 "Premium private-label pet food manufacturer in India. Organic, custom formulations, packaging, QA/QC, and export support.",
-              telephone: "+91 79904 70199",
+              telephone: "+919428563045",
               address: {
                 "@type": "PostalAddress",
                 streetAddress:

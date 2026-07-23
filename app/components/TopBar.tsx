@@ -7,22 +7,22 @@ export default function TopBar() {
       <div className="flex items-center gap-6">
         {/* WhatsApp Link */}
         <a
-          href="https://wa.me/7990470199"
+          href="https://wa.me/919428563045"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 hover:underline"
         >
           <MessageCircle size={16} />
-          <span>WhatsApp: +91 79904 70199</span>
+          <span>WhatsApp: +91-9428563045</span>
         </a>
 
         {/* Phone Link */}
         <a
-          href="tel:+7990470199"
+          href="tel:+919428563045"
           className="flex items-center gap-2 hover:underline"
         >
           <Phone size={16} />
-          <span>Call Us: +91 79904 70199</span>
+          <span>Call Us: +919428563045</span>
         </a>
 
 <a
